@@ -1,0 +1,22 @@
+THE APPLICATION LIBS
+version: 1.5.12c
+updated: 30-10-2014 11:56 SPAIN
+
+THE PUBLIC STRUCTURE AND FILES
+version: 1.2.5
+updated: 02-10-2014 21:05 SPAIN
+
+THE FRAMEWORK LIBS
+version: 1.7.12b
+updated: 30-10-2014 11:12 SPAIN
+
+THE FRAMEWORK DATABASE
+db_type: MSSQL 2005
+file: theframework_v3.1.8_20140825.rar
+version: 3.1.8
+updated: 25-08-2014 08:34 SPAIN
+
+db_type: MYSQL 5.5.38 
+file: theframework_v1.0.2_20141005_mysql.sql
+version: 1.0.2
+updated: 20-10-2014 12:58 SPAIN

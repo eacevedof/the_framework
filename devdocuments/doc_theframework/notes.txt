@@ -1,0 +1,103 @@
+La diferencia entre ./ y ../ y /
+
+./ mantiene la ruta actual en navegador y la usa como raiz  
+ejemplo:
+    url theframework.loc/customers
+    ./js/miarchivo.js
+    busca en: theframework.loc/customers/js/..
+
+../ sale del directorio actual
+
+/ usa el directorio raiz
+
+CONFIGURAR MAMP CON VIRTUAL HOSTS
+    1. CON "su" cambiar /etc/hosts y añadir 127.0.0.1 tudominio.xxx
+    2. editar /Applications/MAMP/conf/apache/httpd.conf
+        quitar el comentario del "Include.."
+        # Virtual hosts
+        Include /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf
+    3. Editar /Applications/MAMP/conf/apache/extra/httpd-vhosts.conf añadiendo la entrada para el nuevo dominio
+        <VirtualHost *:80>
+            DocumentRoot "/Applications/MAMP/htdocs/prj_theframework/the_public"
+            ServerName tudominio.xxx
+        </VirtualHost>
+    4. reiniciar MAMP
+        
+
+//remplazar expresion regular  
+BUSCAR: ,"value"=>\$this->get_post\("(.)+"\)
+REMPLAZAR: 
+
+para crear $this->set_filter_value
+BUSCAR ,"(.)+"value"=>
+REMPLZAR: ,
+
+para crear load_config_list_filters() 2 pasos
+BUSCAR: ,"value"=[>][$]this->get_post[(]".*"[)]
+REMPLAZAR: 
+
+BUSCAR ,array[(]"value"=[>][$]this->get_post[(]".*"[))]
+REMPLZAR: 
+
+
+para crear load_config_list_set_listfilters_from_post() 3 pasos 
+1/3
+BUSCAR ,".*",array[(]"operator"=>"like","value"=>
+REMPLZAR: ,
+2/3
+BUSCAR set_filter
+REMPLZAR: set_filter_value
+3/3
+BUSCAR )));
+REMPLZAR: ));
+
+
+Para pasar de sets a gets
+quita lo que está entre parentesis y deja solo los parentesis
+BUSCAR: [(].*[)]
+REMPLZAR: \(\)
+
+los corchetes sirven par escapar carateres[]
+BUSCAR: [{][$]  
+REMPLZAR: { return $
+
+BUSCAR: set_  
+REMPLZAR: get_
+
+Quita las asignaciones y deja solo el ;
+BUSCAR: [\s]*=.*;
+REMPLAZAR ;
+
+Hubo un error dificil de depurar. el script se rompia en elem_verticalmenu.  Era la sentecia sql de get_modules(). 
+Devolvia false y no un array como debia ser.
+la depuracion de php no creaba nada en el log.
+
+QUITAR DIALOG SKYPE
+BUSCAR: [[].*(: )
+REMPLAZAR
+
+OBTENER INDICES DE ARRAY de: $this->_code_type = $arRow["code_type"]; OBTENER "code_type"
+BUSCAR \$(this)(.*)(arRow)\[
+REMPLAZAR
+
+
+//http://www.forosdelweb.com/f13/crear-eventos-personalizados-javascript-759910/
+function Ajax(url,onCargado)
+{
+    this.ajax = (XMLHttpRequest)?new XMLHttpRequest():new ActiveXObject('Microsoft.XMLHTTP');
+    
+    this.ajax.onreadystatechange=function()
+    {
+        if(this.readyState==4)
+            onCargado(this.responseText);
+    }
+    this.ajax.open("GET",url, true);
+    this.ajax.send(null);
+}
+
+onload = function()
+{
+    new Ajax('log.txt',function(r){document.getElementById('log').innerHTML=r;});
+} 
+
+//<editor-fold defaultstate="collapsed" desc="NIU">//</editor-fold>

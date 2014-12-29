@@ -1,0 +1,46 @@
+.control-group, .form-horizontal .control-group {
+    border-bottom: 1px dashed #DEDEDE;
+    margin: 0;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;    
+}
+body > header {
+    border-bottom: 1px solid #DEDEDE;
+    margin-bottom: 0px;
+    padding: 0;
+    position: relative;
+}
+
+
+body > header .brand {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  /* width: 114px;*/
+  width: 181px;
+  /*height: 37px;*/
+  height:40px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  /*background-image: url("http://www.eduardoaf.com/wp-content/uploads/img_articulos/logo_eduardoaf_com.png");*/
+  background-image: url("../../images/custom/logo_kuzeta_181x40.png");
+}
+
+
+.container.login .brand {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  display: block;
+  /*width: 114px;
+  height: 37px;*/
+  width: 340px;
+  height: 75px;  
+  background-image: url("../../images/custom/logo_kuzeta_340x75.png");
+}

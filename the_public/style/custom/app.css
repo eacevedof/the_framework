@@ -1,0 +1,35 @@
+.labelreq
+{
+    color: #E74949;
+}
+
+.labelpk
+{
+    color: #6B9B20;
+}
+.readonly{background-color: #8E8E8E!important; color:white!important; font-weight: bold;}
+
+.form-info{
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    border-radius: 4px 4px 4px 4px;
+    color: #C09853;
+    margin-bottom: 3px;
+    padding: 8px 35px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.breadscrumb-fix {margin-bottom:0px;}
+.datablock-fix-fortabs{box-shadow:none;}
+.nav-tabs-fix{margin-bottom: 0px!important;}
+.tab-href-fix{border:1px solid #BEC2C8!important; border-bottom: 0px !important; font-weight:bold;}
+
+.al-left { text-align: left }
+.al-right { text-align: right }
+.al-center { text-align: center }
+.al-block { text-align: block }
+
+tr.success > td {background-color: #DFF0D8!important;}
+tr.error > td {background-color: #F2DEDE!important;}
+tr.warning > td {background-color: #FCF8E3!important;}
+tr.info > td {background-color: #C6DBE6!important;}

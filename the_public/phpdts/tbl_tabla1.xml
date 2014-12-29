@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<table connection="conexion1" name="tabla1" table_name="clientes">
+<field number="1">
+        <name>Code</name>
+	<type>varchar</type>
+	<length>50</length>
+	<pk>true</pk>
+</field>
+<field number="2">
+        <name>City</name>
+	<type>varchar</type>
+	<length>30</length>
+	<pk>false</pk>
+</field>
+<field number="3">
+        <name>Phone</name>
+	<type>varchar</type>
+	<length>30</length>
+	<pk>false</pk>
+</field>
+</table>
+

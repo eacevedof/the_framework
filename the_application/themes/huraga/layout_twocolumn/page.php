@@ -1,0 +1,10 @@
+<?php
+//bug($this,"this");
+include("page_head.php");
+if($this->isPage404) 
+    include($this->sPathPage404);
+elseif($this->isPage401) 
+    include($this->sPathPage401);
+else
+    include("page_body.php");//<body>..</body>
+include("page_end.php");//</html>

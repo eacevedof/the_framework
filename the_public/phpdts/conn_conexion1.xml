@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<connection logfile="mylogfile">
+        <name>conexion1</name>
+	<engine>mysql</engine>
+	<host>localhost</host>
+	<user>root</user>
+	<password>apassword</password>
+        <database>thedatabase</database>
+</connection>

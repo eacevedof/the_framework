@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<operation name="operacion1" type="sql" connection="conexion1" logfile="">
+        <sentence>UPDATE noticias set noticia='todo'</sentence>
+</operation>
+
+
