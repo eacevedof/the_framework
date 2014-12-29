@@ -84,8 +84,7 @@ class ControllerOrders extends TheApplicationController
         $oComponentMail->set_content($arContent);
         
         //$arEmails = array();
-        $arEmails[] = "eacevedof@yahoo.es";
-        //$arEmails[] = "alvarofarje@me.com";
+
         $oComponentMail->set_emails_to($arEmails);
         $oComponentMail->send();
         
